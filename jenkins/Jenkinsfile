@@ -4,7 +4,10 @@ pipeline {
         skipStagesAfterUnstable()
     }
 
-    tools { maven 'MVN_LTS' }
+    tools {
+        maven 'MVN_LTS'
+        jdk 'JDK_21'
+     }
 
     stages {
         stage('Build') {
