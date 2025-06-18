@@ -4,7 +4,7 @@ pipeline {
         skipStagesAfterUnstable()
     }
 
-    tools { maven 'Default maven' }
+    tools { maven 'MVN_LTS' }
 
     stages {
         stage('Build') {
